@@ -1,0 +1,40 @@
+[user]
+	email = antoine@raynard.space
+	name = Antoine RAYNARD
+[alias]
+	# Status
+	st = status
+
+	# Commit
+	co = commit
+
+	# Checkout
+	ch = checkout
+	
+	# Branch
+	br = branch
+	
+	# Log History
+	lh = log --pretty=format:\"%C(auto)%h %ad %d %s %C(cyan)[%cn]\" --date=relative
+
+	# Log Graph
+	lg = log --pretty=format:\"%C(auto)%h %d %s %C(cyan)[%cn]\" --graph --all
+		# %C: colors,
+		# %h: short commit hash
+		# %d: decorate (branch name and HEAD pointer)
+		# %ad:commit date
+		# %an:author name
+		# %ac:commiter name
+		# %s: subject (1st line of commit msg)
+
+	# Unstage a file
+	unstage = reset HEAD --
+
+	#Stop tracking file
+	untrack = rm -r --cached
+
+	# Log last commit
+	last = log -1 HEAD
+	
+[color]
+	ui = auto
