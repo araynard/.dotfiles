@@ -107,3 +107,6 @@ source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Created by `userpath` on 2020-06-07 16:14:02
+export PATH="$PATH:/home/antoine/.local/bin"
